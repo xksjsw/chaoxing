@@ -75,7 +75,7 @@
    
     </details>
 - 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 `I understand...` 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
-- 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 **（重要！！！测试现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作）** 。
+- 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 **（重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作）** 。
    <details>
    <summary> 如何随意修改README文件？</summary>
    
@@ -106,7 +106,7 @@
 - 配置python脚本
 python脚本在`chaoxing/cx.py`文件中，其中第12—34行为配置区域，如需自己的服务器运行更改含有`os.environ`的相关参数即可。 
 - 配置位置签到
-进入`chaoxing/cx.py`修改225行`'address': '中国',`的`中国`为你想显示的位置；修改227行`'clientip': '0.0.0.0',`的`0.0.0.0`为你想显示的[ip地址](https://www.ip138.com/ "ip地址")。
+进入`chaoxing/cx.py`修改225行`'address': '中国',`中国`为你想显示的位置；修改227行`'clientip': '0.0.0.0',`的`0.0.0.0`为你想显示的[ip地址](https://www.ip138.com/ "ip地址")。
 - 配置拍照签到
 目前无法配置，默认纯黑色照片，请等待更新。
 
